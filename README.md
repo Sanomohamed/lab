@@ -1,5 +1,5 @@
 # lab
-Exo 1 Average Calculator
+##Exo 1 Average Calculator
 Overview
 This C++ program calculates the average of three integers provided by the user. 
 It takes input for three numbers, computes their average, and outputs the result. 
@@ -16,7 +16,7 @@ Input: Uses cin to read the integers from the user.
 Average Calculation: Computes the average by summing the three integers and dividing by 3.
 Output: Displays the calculated average using cout.
 
-EXO2 Length Conversion Program
+###EXO 2 Length Conversion Program
 Overview
 This C++ program converts lengths from inches and feet to centimeters. 
 It reads user input for lengths in inches and feet, performs the conversion to centimeters, and displays the results.
@@ -42,7 +42,7 @@ Converts feet to centimeters by multiplying with 30.48.
 Output Formatting:
 Displays results with formatted output, using setw and setfill to create a visual separator line.
 
-EXO3  Paint Calculation Program
+####EXO 3  Paint Calculation Program
 Overview
 This C++ program calculates the amount of paint needed to paint a room based on the measurements of various components such as doors, windows, and a bookshelf.
 The program prompts the user for dimensions of each component and computes the paint required, given that 1 gallon of paint covers 120 square feet.
@@ -71,7 +71,7 @@ Determines the gallons of paint required based on the coverage rate.
 Output Formatting:
 Displays the amount of paint needed with two decimal precision.
 
-EXO4 Arithmetic Calculation Program
+#####EXO 4 Arithmetic Calculation Program
 Overview
 This C++ program performs a series of arithmetic calculations based on user-provided integer values.
 The program takes four integers as input and computes four different expressions using these integers.
@@ -97,7 +97,7 @@ iv: Computes another arithmetic expression involving divisions, multiplications,
 Output Formatting:
 Uses setw from <iomanip> to align the results for better readability.
 
-EXO5 Student Test Marks Average Program
+######EXO 5 Student Test Marks Average Program
 Overview
 This C++ program collects and displays the test marks for a student and calculates the average of these marks.
 The program prompts the user to input the student's name and five test marks, and then it outputs the results in a formatted manner.
@@ -120,3 +120,59 @@ Calculates the average of the five test marks using integer arithmetic.
 Output Formatting:
 Uses setw from <iomanip> to align the output for better readability.
 Displays each test mark and the average with a .0% suffix for consistency.
+
+#######EXO 6 Even, Odd, and Zero Number Counter
+Overview
+This C++ program counts the number of even, odd, and zero values entered by the user. 
+The user is prompted to input 10 integers, which can be positive, negative, or zero. 
+The program then categorizes these integers and displays the counts for even numbers, odd numbers, and zeros.
+
+Features
+Input: Prompts the user to enter 10 integers.
+Processing: Counts the number of even numbers, odd numbers, and zeros from the entered integers.
+Output: Displays the counts of even numbers, odd numbers, and zeroes.
+
+Code Explanation
+Variable Declaration:
+num: Integer variable to store the current input number.
+odd, even, zero: Integer variables to count odd numbers, even numbers, and zeroes, respectively.
+Input Handling:
+Uses a for loop to prompt the user to enter 10 integers.
+Processing:
+Checks if each number is even or odd using the modulo operator (%).
+Increments the appropriate counter based on the number's value.
+Specifically checks for zeroes and increments the zero counter if the number is zero.
+Output:
+Displays the counts of even numbers (including zeroes), odd numbers, and zeroes in a formatted manner.
+
+########EXO 7 Test Mark Averaging Program
+Overview
+This C++ program allows users to input test marks for multiple students.
+The program calculates the total number of students, the total sum of the test marks, and the average mark. 
+The user can re-enter test marks as needed and will be prompted to proceed or exit based on their input.
+
+Features
+Input Validation: Ensures that test marks are between 0 and 100.
+Total Calculation: Accumulates the total test marks.
+Average Calculation: Computes the average mark based on valid inputs.
+User Interaction: Prompts the user to either continue entering marks or end the process.
+
+Code Explanation
+Variable Declaration:
+mark: Integer to store the current test mark input.
+total: Integer to accumulate the sum of all valid test marks.
+students: Integer to count the number of valid test marks entered.
+average: Double to store the computed average mark.
+x: Character to capture user response on whether to continue or not.
+Input Handling:
+Uses a do-while loop to repeatedly prompt the user for test marks.
+Validates if the entered mark is within the range of 0 to 100.
+Allows the user to re-enter marks or exit based on input.
+Processing:
+Calculates the total and average marks based on valid inputs.
+Output:
+Displays the total number of students, total marks, and the average mark.
+
+#########EXO 8 
+##########EXO 9
+###########EXO 10 
