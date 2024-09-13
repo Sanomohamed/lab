@@ -95,4 +95,25 @@ User Input: Prompts the user to enter the staff IDs and their total working hour
 Salary Calculation: Computes the total salary for all staff members based on the total working hours.
 Result Display: Outputs the calculated total salary for the month.
 
-###########EXO 10 
+###########EXO 10 Minimum Number Finder
+Overview
+This C++ program is designed to find the minimum value in an array of integers. 
+The user is prompted to enter a predefined number of integers, and the program calculates and displays the smallest number among them.
+
+Features
+User Input: Prompts the user to input a fixed number of integers.
+Minimum Value Calculation: Computes the minimum value from the entered integers.
+Result Display: Outputs the minimum value found in the array.
+
+###########UPDATE Fraction Arithmetic Program
+Overview
+This C++ program allows users to perform arithmetic operations on fractions.
+The user can choose from four operations: addition, subtraction, multiplication, and division of fractions.
+The program prompts the user to input the numerators and denominators of two fractions, performs the selected operation, and then displays the result.
+
+Features
+Addition of Fractions: Computes the sum of two fractions.
+Subtraction of Fractions: Computes the difference between two fractions.
+Multiplication of Fractions: Computes the product of two fractions.
+Division of Fractions: Computes the division of one fraction by another.
+Menu-Based Interface: Provides a menu for users to select the desired operation.
