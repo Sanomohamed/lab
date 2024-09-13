@@ -1,4 +1,4 @@
-qsssdf#include <iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -32,9 +32,6 @@ int main()
 	//display result of the proceess
 	cout << "The total number of even numbers entered is "<<even<< " which includes " << zero << " zeroes" <<endl;
 	cout << "The total number of odd numbers entered is "<<odd<<endl;
-	
-	
-	
 	
 	return 0;
 }

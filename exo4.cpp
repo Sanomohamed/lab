@@ -24,6 +24,5 @@ int main()
 	cout<<"iii)" <<setw(8)<< iii <<endl;
 	cout<<"iv) " <<setw(8)<< iv <<endl;
 	
-	return 0;
-	
+	return 0;	
 }

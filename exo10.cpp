@@ -21,7 +21,6 @@ int main()
     }
      cout  << "The minimum number in the array is: " << min <<endl;
     
-
     return 0;
 }
 

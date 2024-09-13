@@ -46,6 +46,4 @@ int main()
 	cout<<"The total salary for all staff for the month of november: RM"<<s<<endl;
 	
 	return 0;
-	
-	
 }

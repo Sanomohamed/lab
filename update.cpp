@@ -1,116 +1,92 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-//function 
-//void menu();
-//void addFraction();
-//void subtractFraction();
-//void multiplyFraction();
-//void divideFraction();
-// do while condition  to allow user to choise if the continue or not and also select the operator.
 
-//function menu to display a menu 
-
+// Function to display the menu
 void menu() {
-	cout << "This program lets the user perform arithmetic operations on fractions.\nChoose the opreation you want to perform (1,2,3 or 4):" << endl;
-	cout << "1- Addition" << "\n2- Subtraction" << "\n3- Multiplication" << "\n4- Division" << endl<<endl;
+    cout << "This program lets the user perform arithmetic operations on fractions.\nChoose the operation you want to perform (1, 2, 3, or 4):" << endl;
+    cout << "1 - Addition" << "\n2 - Subtraction" << "\n3 - Multiplication" << "\n4 - Division" << endl << endl;
 }
 
-//function addition including inpout and output also process
-int addFraction(int a, int b, int c, int d ) {
-	//int a, b, c, d; 
-	cout << "Enter four integers representing the numerators and denominators of two fractions:" << endl;
-	cin >> a;
-	cin >> b;
-	cin >> c;
-	cin >> d;
-	
-     //numerator = (a * d) + (b * c);
-	//denominator = b * d;
-	return a*d + b*c;
-	return a*d;
-	//cout << "After addition, the numerator of the result is: " << numerator << "  ,and the denominator of the result is: " << denominator << "." << endl;
+// Function to add fractions
+void addFraction() {
+    int a, b, c, d;
+    cout << "Enter four integers representing the numerators and denominators of two fractions:" << endl;
+    cin >> a >> b >> c >> d;
+    
+    int numerator = (a * d) + (b * c);
+    int denominator = b * d;
+    
+    cout << "After addition, the numerator of the result is: " << numerator << " ,and the denominator of the result is: " << denominator << "." << endl;
 }
-//function subtraction including inpout and output also process
+
+// Function to subtract fractions
 void subtractFraction() {
-	int a, b, c, d;
-	int numerator;
-	int denominator;
-	
-	cout << "Enter four integers representing the numerators and denominators of two fractions:" << endl;
-	cin >> a;
-	cin >> b;
-	cin >> c;
-	cin >> d;
-	
-	numerator = (a * d) - (b * c);
-	denominator = b * d;
-	
-	cout << "After subtraction, the numerator of the result is: " << numerator << " ,and the denominator of the result is: " << denominator << "." << endl;
-}
-//function multiplication including inpout and output also process
-void multiplyFraction() {
-	int a, b, c, d;
-	int numerator;
-	int denominator;
-	
-	cout << "Enter four integers representing the numerators and denominators of two fractions:" << endl;
-	cin >> a;
-	cin >> b;
-	cin >> c;
-	cin >> d;
-	
-	numerator = a * c;
-	denominator = b * d;
-	
-	cout << "After addition, the numerator of the result is: " << numerator << " ,and the denominator of the result is: " << denominator << "." << endl;
-}
-//function division including inpout and output also process
-void divideFraction() {
-	int a, b, c, d;
-	int numerator;
-	int denominator;
-	
-	cout << "Enter four integers representing the numerators and denominators of two fractions:" << endl;
-	cin >> a;
-	cin >> b;
-	cin >> c;
-	cin >> d;
-	
-	numerator = a * d;
-	denominator = b * c;
-	
-	cout << "After addition, the numerator of the result is: " << numerator << " ,and the denominator of the result is: " << denominator << "." << endl;
-}
-int main() {
-	char x;
-	int numerator, denominator;
-	int a,b,c,d;
-	do {
-	menu();
-	
-	int choice;
-	cin >> choice;
-	
-	if(choice == 1) {
-	cout<<"the numator is: " <<addFraction(int& a, int& b, int& c, int& d)<<" the denominator is: " <<addfraction(int& a, int& b, int& c, int& d)<<endl;
-    }
-	else if (choice == 2) {
-		subtractFraction();
-	}
-	else if (choice == 3) {
-		multiplyFraction();
-	}
-	else {
-		divideFraction();
-	}	
-	cout<<endl;
-	cout << "Do you wish to perform another operation ? (y or n): "<< endl;
-	cin >> x;
-	cout<<endl;
-} while (x != 'n');
-//output when the user decide to end the program.
- cout<<"You end the programm...."<<endl;
-	
-return 0;
+    int a, b, c, d;
+    cout << "Enter four integers representing the numerators and denominators of two fractions:" << endl;
+    cin >> a >> b >> c >> d;
+    
+    int numerator = (a * d) - (b * c);
+    int denominator = b * d;
+    
+    cout << "After subtraction, the numerator of the result is: " << numerator << " ,and the denominator of the result is: " << denominator << "." << endl;
 }
 
+// Function to multiply fractions
+void multiplyFraction() {
+    int a, b, c, d;
+    cout << "Enter four integers representing the numerators and denominators of two fractions:" << endl;
+    cin >> a >> b >> c >> d;
+    
+    int numerator = a * c;
+    int denominator = b * d;
+    
+    cout << "After multiplication, the numerator of the result is: " << numerator << " ,and the denominator of the result is: " << denominator << "." << endl;
+}
+
+// Function to divide fractions
+void divideFraction() {
+    int a, b, c, d;
+    cout << "Enter four integers representing the numerators and denominators of two fractions:" << endl;
+    cin >> a >> b >> c >> d;
+    
+    int numerator = a * d;
+    int denominator = b * c;
+    
+    cout << "After division, the numerator of the result is: " << numerator << " ,and the denominator of the result is: " << denominator << "." << endl;
+}
+
+int main() {
+    char x;
+    do {
+        menu();
+        
+        int choice;
+        cin >> choice;
+        
+        switch (choice) {
+            case 1:
+                addFraction();
+                break;
+            case 2:
+                subtractFraction();
+                break;
+            case 3:
+                multiplyFraction();
+                break;
+            case 4:
+                divideFraction();
+                break;
+            default:
+                cout << "Invalid choice. Please select a valid operation." << endl;
+        }
+        
+        cout << endl;
+        cout << "Do you wish to perform another operation? (y or n): " << endl;
+        cin >> x;
+        cout << endl;
+    } while (x != 'n');
+    
+    cout << "You ended the program..." << endl;
+    
+    return 0;
+}
