@@ -9,3 +9,9 @@ Features
 User Input: Prompts the user to input three integers.
 Average Calculation: Computes the average of the three input integers.
 Output: Displays the computed average.
+
+Code Explanation
+Variable Declaration: Defines variables for the three integers (num1, num2, num3) and the average (average).
+Input: Uses cin to read the integers from the user.
+Average Calculation: Computes the average by summing the three integers and dividing by 3.
+Output: Displays the calculated average using cout.
