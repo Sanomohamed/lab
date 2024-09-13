@@ -70,3 +70,53 @@ Calculates the total wall area of the room.
 Determines the gallons of paint required based on the coverage rate.
 Output Formatting:
 Displays the amount of paint needed with two decimal precision.
+
+EXO4 Arithmetic Calculation Program
+Overview
+This C++ program performs a series of arithmetic calculations based on user-provided integer values.
+The program takes four integers as input and computes four different expressions using these integers.
+The results are then displayed in a formatted manner.
+
+Features
+Input: Prompts the user to enter four integer values.
+Calculations: Performs a series of arithmetic operations and power functions.
+Output: Displays the results of the calculations in a formatted way.
+
+Code Explanation
+Variable Declaration:
+
+a, b, c, d: Integer variables for user input.
+i, ii, iii, iv: Variables to store the results of different calculations.
+Input Handling:
+Uses cin to read four integer values from the user.
+Processing Calculations:
+i: Computes an expression involving powers, multiplications, additions, and divisions.
+ii: Calculates an expression involving divisions, multiplications, and nested parentheses.
+iii: Evaluates a complex expression with multiple arithmetic operations and powers.
+iv: Computes another arithmetic expression involving divisions, multiplications, and parentheses.
+Output Formatting:
+Uses setw from <iomanip> to align the results for better readability.
+
+EXO5 Student Test Marks Average Program
+Overview
+This C++ program collects and displays the test marks for a student and calculates the average of these marks.
+The program prompts the user to input the student's name and five test marks, and then it outputs the results in a formatted manner.
+
+Features
+Input: Prompts the user to enter the student's name and five test marks.
+Processing: Calculates the average of the five test marks.
+Output: Displays the student's name, individual test marks, and the average in a neatly formatted output.
+
+Code Explanation
+Variable Declaration:
+name: A string variable to store the student's name.
+m1, m2, m3, m4, m5: Integer variables to store the test marks.
+average: Integer variable to store the calculated average of the test marks.
+Input Handling:
+Uses getline to read the student's name, allowing for names with spaces.
+Uses cin to read the five test marks.
+Processing:
+Calculates the average of the five test marks using integer arithmetic.
+Output Formatting:
+Uses setw from <iomanip> to align the output for better readability.
+Displays each test mark and the average with a .0% suffix for consistency.
